@@ -1,0 +1,586 @@
+body {
+		color: #282b4a !important;
+		font-size: 14.63px !important;
+		font-family: 'Raleway', sans-serif;
+	    margin: 0;
+	    padding: 0;
+		outline: 0;
+}
+
+
+/*---------------------------------------Start-Header Part(Home)-----------------------------*/
+#header .navbar .main-logo {
+	width: 220px !important;
+	height: 200px !important;
+}
+#navbarSupportedContent {
+	font-family: 'tahoma, sans-serif';
+}
+#header .navbar-nav .nav-link {
+	padding: 25px 30px;
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+}
+#header .navbar-nav .registration{
+    padding: 8px 35px !important;
+	border-radius: 3px;
+	color: #ffffff;
+	font-size: 18px !important;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+a.reg {
+	color:  #ffffff;
+	text-decoration:  none;
+}
+
+.btn-group {
+	margin-top:  9px;
+}
+#header .navbar-nav a.btn2 {
+    padding: 8px 35px !important;
+	border-radius: 3px;
+	color: #000000;
+	font-size: 18px !important;
+	font-weight: 600;
+	background-color: orange;
+	margin-right: 10px;
+}
+/*---------------------------------------End-Header Part---------------------------------*/
+
+/*--------------------------------------Start-Mega-Menu----------------------------------*/
+#header .mega-menu {
+	right: 7px;
+	width: 100%;
+}
+.mega-menu {
+	background: none repeat scroll 0 0 #fff;
+    position: absolute;
+    width: 200px;
+	right: 300px;
+	margin-top: -80px;
+	padding: 15px;
+	display: none;
+	transition-duration: 0.9s;
+	z-index: 1000;
+	box-shadow: 0 10px 60px 1px rgba(0,0,0,.08)!important;
+	border-radius: 2px;
+	transition: .9s ease;
+}
+.display-on {
+	display: block;
+	transition-duration: 0.9s;
+}
+/*-------------------------------------End-Mega-Menu--------------------------------------*/
+
+/*---------------------------------- Start-Main-Content-----------------------------------*/
+.main-content {
+	padding-top: 40px;
+	padding-left: 50px; 
+	padding-right: 50px; 
+    padding-bottom: 20px;
+}
+.main-content p {
+	padding: 40px 0;
+	line-height: 30px;
+	color: #7C7271 !important;
+	font-weight: 700 !important;
+}
+.main-content form i.fa.fa-search {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: #000000;
+	font-size: 20px;
+}
+.main-content  input.btn.btn-danger {
+    padding: 5px 40px;
+	font-size: 15.96px;
+	font-family: 'Rubik';
+    margin-left: -35px !important;
+}
+.main-content input.form-control {
+	background: transparent;
+	border-top-left-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+	margin-right: 34px;
+	padding-left: 35px;
+	box-shadow: none;
+	font-weight: 600 !important;
+	color: #7e7373 !important;	
+	border: 1px solid #000000;
+}
+/*--------------------------------End-Main-Content------------------------------------------*/
+
+
+/*---------------------------- Start-Internship Process-------------------------------------*/
+.internship-process{
+	padding: 0 0 20px;
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+.process {
+    padding: 30px 15px 70px;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+}
+.process h3 {
+    font-size: 18.62px !important;
+}
+.process i.fa.fa-angle-right {
+    margin-bottom: 0;
+    width: auto;
+    height: 0;
+    background: transparent;
+    line-height: inherit;
+    font-size: 14.63px;
+    margin-left: 5px;
+	transition: inherit;
+	color: #fff;
+} 
+.process:hover {
+    box-shadow: 0 5px 8px 0 #ddd;
+}
+/*---------------------------- End-Internship Process----------------------------*/
+
+
+/*=============================Category Page=====================================*/
+
+/*----------------------------Start-near-job-------------------------------------*/
+
+.nearcol {
+    padding: 58px 30px 0 !important;
+}
+.nearJob h1 {
+    font-size: 41.23px !important;
+}
+.nearJob h2 {
+    font-size: 30.59px !important;
+}
+/*----------------------------End-near-job-------------------------------------*/
+
+
+/*----------------------------Start-Explore-------------------------------------*/
+.exoInner {
+	text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+	transition: .5s ease;
+	background: #eaeaea;
+	height: 100%;
+}
+.exoInner:hover {
+    background: #ff4153;
+    color: #fff;
+}
+.exoInner:hover i {
+	color: #fff;
+}
+.exoInner h4 {
+    font-size: 18.62px !important;
+	font-weight: 600 !important;
+}
+.exoInner:hover p {
+	color: #fff !important;
+}
+.exoInner p {
+    font-family: 'Rubik';
+	font-size: 14.63px !important;
+}
+.explore {
+    padding: 30px 0 0;
+}
+.explore a{
+    color: #282b4a !important;
+    text-decoration: none !important;
+}
+.explore h3{
+    margin-bottom: 70px;
+	padding: 0 !important;
+}
+.explore .row.pb-5 {
+    padding-bottom: 60px !important;
+}
+.explore .row.pb-4 {
+    padding-bottom: 70px !important;
+}
+.explore a.btn.btn-danger {
+    font-family: 'Rubik';
+	padding: 10px 30px;
+    border-radius: 10px;
+	font-size: 18.62px;
+	color: #fff !important;
+}
+.exoInner i {
+    color: #ff4153;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+/*----------------------------END-Explore-------------------------------------*/
+
+
+/*---------------------------Start-Profile-------------------------------------*/
+.proFile {
+    padding: 150px 0;
+}
+.proFile .card {
+  position: relative; 
+  border: none;
+}
+.proFile .jobImage {
+	border-radius: 35px;
+}
+.proFile .card-body {
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 19px !important;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	height: 50px;
+}
+.proFile .card-body h4 {
+	margin-bottom: 0;
+    font-size:  18.62px !important;
+    font-weight: 600 !important;
+	line-height: 10px;
+}
+.proFile .card-img-top {
+	border-radius: 35px;
+}
+#slideProfile a.btn-floating.prev {
+    color: #888;
+    font-size: 24px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    padding: 0 6px;
+    box-shadow: rgb(50 50 93 / 10%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    position: absolute;
+    top: 150px;
+    left: -75px;
+}
+#slideProfile a.btn-floating.next {
+    color: #888;
+    font-size: 24px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    padding: 0 6px;
+    box-shadow: rgb(50 50 93 / 10%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    position: absolute;
+    top: 150px;
+    right: -75px;
+}
+/*---------------------------End-Profile-------------------------------------*/
+
+
+/*============================About Us Page===================================*/
+
+
+
+/*---------------------------Start-about-us-part------------------------------------*/
+.about-us-part {
+	padding:10px 50px !important;
+}
+/*---------------------------End-about-us-part------------------------------------*/
+
+
+/*---------------------------Start-overview----------------------------------*/
+.overImg {
+    border-radius: 50px;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+.overview p, .readmores {
+	line-height: 25px;
+	margin: 60px 0 30px;
+	font-weight: 600 !important;
+	color: #000000 !important;
+}
+.readmores {
+	margin: 0 !important;
+}
+/*---------------------------End-overview------------------------------------*/
+
+/*---------------------------Start-ValPart------------------------------------*/
+.valPart {
+    text-align: center;
+	padding-top: 150px;
+	position: relative;
+	margin-top: 80px; 
+}
+.bgnumber {
+	background: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	height: auto;
+    padding: 90px;
+	width: 100%;
+    margin-top: 60px;
+}
+.valinner {
+    background: #fff;
+    box-shadow: 4px -3px 2px 0 #9e9e9e54;
+    border-radius: 20px;
+    padding: 45px 30px;
+    position: absolute;
+    transform: translate(-50%, -35%);
+    left: 50%;
+    width: 85%;
+}
+.valinner i {
+    background: #282b4a;
+    color: #fff;
+    width: 60px;
+    padding: 18px 0;
+    border-radius: 50px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.valinner h1 {
+    font-family: 'Rubik';
+}
+.valinner h4 {
+	font-size: 15.96px;
+    color: #7e7373;
+}
+/*---------------------------End-valPart----------------------------------------*/
+
+
+/*============================Contact Us Page===================================*/
+.contacts {
+    padding: 30px 0;
+    text-align: center;
+}
+.contactForm {
+	text-align: center;
+}
+.contInner h4 {
+    font-size: 23.94px !important;
+    font-weight: 600 !important;
+}
+.contactForm form {
+    padding: 80px 30px 0;
+}
+.contInner i {
+    color: #7e7373;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.contactForm label {
+    font-size: 14.63px;
+}
+.contInner {
+	position: relative;
+	padding: 50px 15px;
+    border-radius: 35px;
+	transition: .5s ease;
+}
+.contInner:hover {
+    box-shadow: 0 5px 8px 0 #ddd;
+}
+.contactForm .form-control {
+	border-radius: 0;
+	border-bottom: 1px solid #7e7373 !important;
+	color: #7e7373 !important;
+	border: transparent;
+	padding: 10px 0;
+}
+.contactForm .form-group {
+	margin-bottom: 60px !important;
+}
+.contactForm .btn-danger {
+    font-size: 14.63px;
+    padding: 8px 45px;
+	margin-top: 25px;
+}
+.contactForm .form-control:focus {
+    color: #282b4a ;
+    background-color: #fff;
+    border-bottom: 1px solid #282b4a !important;
+    outline: none;
+    box-shadow: none;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none !important;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #282b4a !important;
+}
+/*============================END-Contact Us Page===================================*/
+
+
+/*============================Start-Login Page======================================*/
+.loginForm .btn-floating {
+	padding: 5px 8px !important;
+	margin: 0 !important;
+}
+.loginForm{
+	font-size: 10px;
+}
+.loginForm p {
+	font-size: 18px;
+	color: red;
+	font-weight: 700;
+}
+.loginForm {
+	padding: 40px 0;
+}
+.loginForm i {
+    font-size: 18px;
+}
+.latestForm .form-group {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top:  25px;
+
+}
+.latestForm .form-control-placeholder {
+    position: absolute;
+    top: 18px;
+    transition: .5s ease;
+    color: #7e7373;
+	left: 20px;
+	padding: 0 8px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.latestForm .form-control:focus+.form-control-placeholder,
+.latestForm .form-control:valid+.form-control-placeholder {
+    font-size: 10.62px !important;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+	background: #fff;
+	top: 8px;
+}
+.latestForm .form-control {
+    background: transparent;
+    border: 1px solid #7e7373;
+    transition: 0.5s;
+    height: calc(1.5em + .75rem + 20px);
+	padding: 8px 55px 8px 25px;
+    border-radius: 10px !important;
+	box-shadow: none !important;
+}
+.latestForm input.form-control:focus,
+.latestForm input.form-control:after {
+    outline-width: 0;
+    border: 1px solid #282b4a;
+    background: transparent;
+}
+.latestForm i.iconSet {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+	color: #7e7373;
+	width: 40px;
+	text-align: center;
+}
+.latestForm .form-control:focus i.iconSet {
+    color: #ff4153 !important;
+}
+.loginForm input[type="submit"] {
+    border-radius: 10px;
+    padding: 10px;
+	font-size: 18.62px;
+	margin-bottom: 50px;
+}
+.loginForm h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.loginForm label.custom-control-label {
+    padding-top: 3px;
+    color: #282b4a;
+}
+.loginForm .custom-checkbox .custom-control-label::before {
+	border-radius: 0;
+}
+.loginForm .custom-control-input:checked~.custom-control-label::before {
+	background: #282b4a;
+	border-color: #282b4a;
+}
+.loginForm a.forgotPwd {
+    color: #4b4b4b;
+}
+.loginForm .btn-floating  {
+    font-size: 14.96px;
+    padding: 10px 35px;
+}
+/*============================END-Login Page======================================*/
+
+/*----------------------------------Start-Footer-Part------------------------------------*/
+#footer {
+	background: lightblue;
+	color: #000000;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+#footer .about-nsu-intern {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+#footer .col-sm-6 {
+	float: left;
+}
+#footer .col-sm-6 .main-logo {
+	width: 220px !important;
+	height: 200px !important;
+}
+#footer .footer-content {
+    margin-top: 20px;
+	margin-bottom: 30px;
+}
+#footer .col-sm-6 p {
+    padding-top: 40px;
+	color: #000000 !important;
+}
+#footer .contact-us-info {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+#footer h5 {
+    font-size: 18.62px;
+	font-weight: 600 !important;
+}
+#footer .media {
+	align-items: baseline;
+}
+#footer .media i {
+    width: 30px;
+    font-size: 18px;
+}
+#footer ul.list-inline li a i {
+	font-size: 23.94px;
+}
+#footer  .list-inline-item:not(:last-child) {
+	margin-right: 24.94px;
+}
+#footer ul li a {
+    color: #000000;
+	font-size: 15.96px;
+}
+#footer ul li a:hover {
+    color: #fff;
+	text-decoration: none;
+}
+#footer .social-link {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+}
+/*----------------------------------END-Footer-Part------------------------------------*/
+
+img.image-position {
+	text-align:  center !important;
+}
+

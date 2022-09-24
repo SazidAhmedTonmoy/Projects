@@ -1,0 +1,4 @@
+(*)
+The Mass on Earth is 0.0 kg
+The Velocity is 3000000.0 m/s
+The Relativistic Mass is 4.00020001500125 kg

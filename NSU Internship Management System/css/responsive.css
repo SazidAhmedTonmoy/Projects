@@ -1,0 +1,94 @@
+
+@media (max-width: 1024px){
+	
+	h2 {
+		font-size: 33.23px !important;
+	}
+	
+	h6, h5 {
+		font-size: 18.28px;
+	}
+
+
+	#header .navbar-nav .nav-link {
+		padding: 10px 20px;
+		font-size: 13.96px;
+	}
+	
+	#header .navbar-nav .btn {
+		font-size: 13.96px !important;
+	}
+	
+	#header .mega-menu {
+		right: 15px;
+	}	
+	#header .navbar-nav a.btn.btn-danger {
+		padding: 5px 15px !important;
+		border-radius: 5px;
+	}
+}
+	
+@media (max-width: 1000px){
+	.navbar-light .navbar-toggler {
+		border: transparent;
+	}	
+	#header .mega-menu {
+		right: 0;
+		width: 100%;
+		position: static;
+		background: #ff4153;
+		padding: 15px 30px;
+	}
+	
+	#header .mega-menu .dropdown-item {
+		color: #fff !important;
+	}	
+	#header .mega-menu .dropdown-item:hover {
+		background: #fff !important;
+		color: #ff4153 !important;
+		padding-left: 40px;
+	}
+	#header .mega-menu .border-right {
+		border: none !important;
+	}
+	.navbar-center .nav-item {
+		line-height: 30px !important;
+		border-bottom: 1px solid #2a3b4a;
+	}
+	
+	#navbarSupportedContent {
+		background: #fff;
+		z-index: 1;
+		padding: 0 15px 15px;
+		box-shadow: 0 10px 60px 1px rgba(0,0,0,.08)!important;
+		transition: 1s ease;
+		margin-top: 10px;
+	}
+	#header .navbar-nav.navbar-right a.btn{
+		width: 100%;
+	}
+	.navbar-light .navbar-toggler {
+		border: 1px solid #ff4153 !important;
+		padding: 2px 10px;
+		box-shadow: 0 5px 8px 0 #ddd;
+		background: #ff4153;
+		line-height: 22px;
+	}
+	.navbar-light .navbar-toggler:focus{
+		outline: 0 !important;
+	}
+	.navbar-light .navbar-toggler-icon:before {
+		content: "\f0c9" !important;
+		font-family: 'FontAwesome' !important;
+		color: #fff!important;
+	}	
+	.navbar-light .navbar-toggler-icon {
+		background-image: none !important;
+		width: 30px !important;
+		height: 25px !important;
+	}
+    #header .navbar-nav a.btn.btn-link {
+        color: #000000;
+    }	
+}
+

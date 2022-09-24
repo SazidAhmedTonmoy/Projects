@@ -1,0 +1,4 @@
+(*)
+The Lenght on Earth is 0.0 m
+The Velocity is 200000.0 m/s
+The Length Contraction is 9.99999777777753 m

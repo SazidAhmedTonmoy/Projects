@@ -1,0 +1,9 @@
+# train and val data
+train: ../dataset/image/train/
+val: ../dataset/image/val/
+
+# number of classes
+nc: 3
+
+# class names
+names: ['Visible change without cavitation', 'Visible change with microcavitation', Visible change with cavitation']

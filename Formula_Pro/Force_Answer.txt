@@ -1,0 +1,4 @@
+(*)
+The Mass is 5.0 kg
+The Acceleretaion is 6.0 m/s^2
+The Force is 30.0 N

@@ -1,0 +1,3 @@
+(*)
+The Length of the String is 78.0 m
+The Time Period is 17.726179689938835 s

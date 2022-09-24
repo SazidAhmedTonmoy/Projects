@@ -1,0 +1,5 @@
+(*)
+The P. Velocity is 5.0 m/s
+The Acceleretaion is 6.0 m/s^2
+The Time is 7.0 s
+The Distance is 182.0 m

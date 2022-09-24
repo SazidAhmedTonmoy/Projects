@@ -1,0 +1,5 @@
+(*)
+The 1st base is 4.0 unit
+The 2nd base is 5.0 unit
+The height is 8.0 unit
+The Area of the Trapzoid is 36.0 unit^2

@@ -1,0 +1,4 @@
+(*)
+The Force is 4.0 N
+The Distance is 5.0 m
+The Work is 20.0 J

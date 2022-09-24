@@ -1,0 +1,4 @@
+(*)
+The Mass is 1.0 kg
+The Velocity is 2.0 m/s
+The Kinetic Energy is 2.0 J

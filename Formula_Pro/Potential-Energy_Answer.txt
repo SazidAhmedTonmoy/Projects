@@ -1,0 +1,4 @@
+(*)
+The Mass is 10.0 kg
+The Height is 10.0 m
+The Potential Energy is 980.0 J

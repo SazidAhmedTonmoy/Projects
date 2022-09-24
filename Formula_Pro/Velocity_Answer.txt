@@ -1,0 +1,5 @@
+(*)
+The P. Velocity is 6.0 m/s
+The Acceleretaion is 2.0 m/s^2
+The Time is 1.0 s
+The Velocity is 8.0 m/s

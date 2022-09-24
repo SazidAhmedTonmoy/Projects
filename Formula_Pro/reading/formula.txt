@@ -1,0 +1,30 @@
+Motion:
+1. s = v*t
+2. v=u+a*t
+3. v^2 = u^2+2*a*s
+4. s = u*t+.5*a*t^2
+5. a = (v-u)/t
+
+Work:
+1. F = m*a
+2. W = F*s
+3. p = F*v
+4. I = M*K^2
+
+Power:
+1. E = m*g*h
+2. E = .5*m*v^2
+3. P = (m*g*h)/t
+4. E = P^2/2*m
+5. m*g*h = F*s+m*g*s*Sin(Q)
+
+Gravity:
+1. F = G*m1*m2/d^2
+2. g = G*m/d^2
+3. Ve= sqrt(2*g*R)
+4. v1*r1 = v2*r2
+
+Electronics:
+1. Ie = Ic+Ib
+2. Alpha = Beta/1+Beta
+3. Beta = Alpha/1-Alpha

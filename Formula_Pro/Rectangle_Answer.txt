@@ -1,0 +1,4 @@
+(*)
+The height is 9.0 unit
+The base is 8.0 unit
+The Area of the Rectangle is 72.0 unit^2

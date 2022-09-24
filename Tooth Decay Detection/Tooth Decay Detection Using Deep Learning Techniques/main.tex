@@ -1,0 +1,243 @@
+\documentclass[12pt,a4paper,twoside,openright]{report}
+
+%%%%%%% Import packages %%%%%%%
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{epstopdf,amsfonts,array,multirow,amsmath,tabularx,setspace,amssymb,enumerate,csquotes}
+	
+% \usepackage{url}
+% \usepackage{bbm}
+% \usepackage{eufrak}
+% \usepackage{marvosym}
+% \usepackage{moderncvcompatibility}
+
+%% packages with settings
+% Inline listing package
+% \usepackage[inline]{enumitem}
+\usepackage{listings}
+% Page geometry
+\usepackage{geometry}
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\topmargin}{-1.27cm}
+\setlength{\headheight}{32pt}
+\setlength{\headsep}{1em} %% Setting for gap in header and main body%%
+\setlength{\textheight}{24.0cm}
+%\setlength{\textwidth}{14.65cm}
+\setlength{\footskip}{1.5cm}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{1em}
+
+% Set line spacing to 1.25 because
+% with 12pt font, 1.5 spacing is too large
+\setstretch{1.25}
+
+\usepackage{fancyhdr}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{relsize}
+\usepackage{bigints}
+
+% Packages for table of contents
+\setcounter{tocdepth}{3}
+
+\usepackage[nottoc]{tocbibind}
+\usepackage[titles,subfigure]{tocloft}
+
+\makeatletter
+\newlength{\@chapterlength} % Original Magic Value - RMR
+\setlength{\@chapterlength}{1.5em} % This code adds space for \@chapapp for toc entries
+\newcommand\@chapterheadsmark{1}
+\ifnum \@chapterheadsmark = 1
+\settowidth{\@chapterlength}{\@chapapp}
+\addtolength{\@chapterlength}{3.8em} % Space between toc labels and values
+\fi
+% \def\l@chapter{\pagebreak[3]\vskip 1em plus 1pt \@dottedtocline{0}{0em}{1.5em}}
+% \def\l@chapter{\pagebreak[3]\vskip 1em plus 1pt \@dottedtocline{0}{0em}{\@chapterlength}}
+
+\def\l@section{\@dottedtocline{1}{\@chapterlength}{2.3em}}
+
+\newlength{\@subsectionlength}
+\setlength{\@subsectionlength}{\@chapterlength}
+\addtolength{\@subsectionlength}{2.3em}
+\def\l@subsection{\@dottedtocline{2}{\@subsectionlength}{3.2em}}
+
+\newlength{\@subsubsectionlength}
+\setlength{\@subsubsectionlength}{\@chapterlength}
+\addtolength{\@subsubsectionlength}{5.5em}
+\def\l@subsubsection{\@dottedtocline{3}{\@subsubsectionlength}{4.1em}}
+
+\newlength{\@paragraphlength}
+\setlength{\@paragraphlength}{\@chapterlength}
+\addtolength{\@paragraphlength}{8.5em}
+\def\l@paragraph{\@dottedtocline{4}{\@paragraphlength}{5em}}
+
+\newlength{\@subparagraphlength}
+\setlength{\@subparagraphlength}{\@chapterlength}
+\addtolength{\@subparagraphlength}{10.5em}
+\def\l@subparagraph{\@dottedtocline{5}{\@subparagraph}{6em}}
+\makeatother
+
+\renewcommand\cftchappresnum{\chaptername~}
+\newlength\mylength
+\settowidth\mylength{\cftchappresnum\cftchapaftersnum\qquad}
+\addtolength\cftchapnumwidth{\mylength}
+
+\usepackage[acronym,nomain,toc]{glossaries}
+\makeglossaries
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{List of Symbols}
+\usepackage[toc,page]{appendix}
+
+% Packages for floats like figures and tables
+\usepackage{float}
+\usepackage{caption}
+% \usepackage[center]{caption}
+% \usepackage{longtable}
+% \usepackage{subfig}
+\usepackage{subfigure}
+% \usepackage{subcaption}
+% \usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
+% \usepackage{algorithmic}
+
+\usepackage[base]{babel}
+\usepackage{lipsum,blindtext} % just to generate text for the example
+
+\usepackage{color}   %May be necessary if you want to color links
+
+\usepackage{datetime}
+\newdateformat{thisdate}{%
+	\twodigit{\THEDAY}}
+\newdateformat{thismonthdigit}{%
+	\twodigit{\THEMONTH}}
+\newdateformat{thismonth}{%
+	\monthname[\THEMONTH]}
+\newdateformat{thisyear}{%
+	\THEYEAR}
+
+% \usepackage{cite}
+% \usepackage{notoccite}
+\usepackage[backend=biber, style=ieee, sorting=none, defernumbers=true]{biblatex}
+\addbibresource{bibliography.bib}
+
+% Hyperref should be the last package to be loaded
+\usepackage{hyperref}
+% \hypersetup{
+% 	breaklinks=true,
+%     colorlinks=true, %set true if you want colored links
+%     linktoc=all,     %set to all if you want both sections and subsections linked
+%     linkcolor=black,  %choose some color if you want links to stand out
+%     citecolor=black,
+%     urlcolor=black
+% }
+\newcommand{\listequationsname}{List of Equations}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{%
+\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+
+\hypersetup{linktoc=all, colorlinks=true, linkcolor=Black, citecolor=teal, urlcolor=red}
+
+
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator*{\argmin}{arg\;min}
+\DeclareMathOperator*{\argmax}{arg\;max}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{prop}{Proposition}
+%-------------------------------------------------------------------
+
+%\flushbottom
+%--------------------------------------------------------------------------
+\raggedbottom                               % (Remove Unnecessary space b/w paragraphs)
+%--------------------------------------------------------------------------
+\begin{document}
+
+% --------- Title and abstract etc in the front matter ----------- %
+\pagenumbering{gobble}
+\input{00_Cover/cover_page}
+
+%%%%%%%%%%%% Front Matter %%%%%%%%%%%%
+\pagenumbering{roman}
+\include{01_Declaration/Declaration}
+\include{02_Approval/Approval}
+\include{03_ACKNOWLEDGEMENTS/ACKNOWLEDGEMENTS}
+ 
+%%%%%%%%%%%% Abstract %%%%%%%%%%%%
+\setstretch{2}  % double spacing
+\input{06_Abstract/Abstract}
+
+
+%%%%%% Table of Contents %%%%%%
+%%%%%%% To create 1.5 spacing in contents
+\setstretch{1.5}
+
+\input{09_Contents/Contents}
+
+\pagenumbering{arabic}
+%%%%%%%% To create double spacing in chapters
+\setstretch{2}
+
+% Fancy header
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection~#1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter~-~#1}{}}
+\fancyhf{}
+%\fancyhead[RE]{\leftmark}
+%\fancyhead[LO]{\rightmark}
+\fancyhead[LE,RO]{\thepage}
+
+%%%%%% Chapters %%%%%%
+%% Remove any command starting with "\lipsum"
+%% from the chapter text. They are used to generate
+%% junk test paragraphs
+
+\input{10_Chapter_1/Introduction}
+\newpage
+%\newpage\null\newpage
+\input{20_Chapter_2/Literature_review}
+\newpage
+%\newpage\null\newpage
+%\newpage\null\newpage
+\input{40_Chapter_4/chapter_4}
+\newpage
+%\newpage\null\newpage
+\input{50_Chapter_5/chapter_5}
+\newpage
+\input{55_chapter_5/chapter5}
+\newpage
+%\newpage\null\newpage
+\input{60_Conclusion/Conclusion}
+\newpage
+
+% \null\newpage
+
+\setstretch{1}
+
+\vspace{12pt}
+\begin{thebibliography}{00}
+\bibitem{b1} B. J. N. D.D.S., "The Stages of Tooth Decay:  Progression of a Cavity," 16 6 2017. [Online]. Available: https://www.nordhusdentistry.com/blog/2017/06/16/the-stages-of-tooth-decay-183529. [Accessed 12 5 2022].
+\bibitem{b2} Peres, M. A., Macpherson, L. M. D., Weyant, R. J., Daly, B., Venturelli, R., Mathur, M. R., Listl, S., Celeste, R. K., Guarnizo-Herreño, C. C., Kearns, C., Benzian, H., Allison, P., & Watt, R. G. (2019). Oral diseases: A global public health challenge. The Lancet, 394, 249–260. https://doi.org/10.1016/S0140-6736(19)31146-8
+\bibitem{b3} Ali, A. H., Koller, G., Foschi, F., Andiappan, M., Bruce, K. D., Banerjee, A., & Mannocci, F. (2018). Self-limiting versus conventional caries removal: A randomized clinical trial. Journal of Dental Research, 97(11), 1207–1213. https://doi.org/10.1177/0022034518769255
+\bibitem{b4}  Park, W., & Park, J. (2018). History and application of artificial neural networks in dentistry. European Journal of Dentistry,12(4),594-601, https://doi.org/10.4103/
+\bibitem{b5} W. You, A. Hao, S. Li, Y. Wang, and B. Xia, “Deep learning-based dental plaque detection on primary teeth: a comparison with clinical assessments,” BMC Oral Health, vol. 20, no. 1, May 2020, doi: 10.1186/s12903-020-01114-6.
+\bibitem{b6} M. T. G. Thanh, N. Van Toan, V. T. N. Ngoc, N. T. Tra, C. N. Giap, and D. M. Nguyen, “Deep Learning Application in Dental Caries Detection Using Intraoral Photos Taken by Smartphones,” Applied Sciences, vol. 12, no. 11, p. 5504, May 2022, doi: 10.3390/app12115504.
+\bibitem{b7} J.-H. Lee, D.-H. Kim, S.-N. Jeong, and S.-H. Choi, “Detection and diagnosis of dental caries using a deep learning-based convolutional neural network algorithm,” Journal of Dentistry, vol. 77, pp. 106–111, Oct. 2018, doi: 10.1016/j.jdent.2018.07.015.
+\bibitem{b8} Bhattacharjee N. Automated Dental Cavity Detection System Using Deep Learning and Explainable AI. AMIA Annu Symp Proc. 2022 May 23;2022:140-148. PMID: 35854730; PMCID: PMC9285146.
+\bibitem{b9} Haghanifar, Arman, Mahdiyar Molahasani Majdabadi, and Seok-Bum Ko. "Paxnet: Dental caries detection in panoramic x-ray using ensemble transfer learning and capsule classifier." arXiv preprint arXiv:2012.13666 (2020)
+\bibitem{b10} Tsung-Yi Lin Michael Maire Serge Belongie Lubomir Bourdev Ross Girshick James Hays Pietro Perona Deva Ramanan C. Lawrence Zitnick Piotr Dollar, " Microsoft COCO: Common Objects in Context", pp. 4-6, 2014, https://doi.org/10.48550/arXiv.1405.0312
+\bibitem{b11} Alexey Bochkovskiy, Chien-Yao Wang, Hong-Yuan Mark Liao, " YOLOv4: Optimal Speed and Accuracy of Object Detection", pp. 6-9, 2020, https://doi.org/10.48550/arXiv.2004.10934
+\bibitem{b12} "YOLOv4- An explanation of how it works", Roboflow Blog,2022. [Online]. Available: https://blog.roboflow.com/a-thorough-breakdown-of-yolov4/.
+\bibitem{b13} "Custom Object Detection with transfer learning with pre-trained YOLO-V4 model", sandipanweb, 2022. [Online].Available:https://sandipanweb.wordpress.com/2022/01/17/custom-object-detection-with-transfer-learning-with-pre-trained-yolo-v4-model/. [Accessed: 14- May- 2022].
+\bibitem{b14} "YOLOv5 is Here", Roboflow Blog, 2022. [Online]. Available:https://blog.roboflow.com/yolov5-is-here/
+\bibitem{b15} "IoU a better detection evaluation metric", Medium, 2022.[Online].Available:https://towardsdatascience.com/iou-a-better-detection-evaluation-metric.
+\bibitem{b16} "Mean Average Precision (mAP) Explained | Paperspace Blog", Paperspace Blog, 2022. [Online]. Available:https://blog.paperspace.com/mean-average-precision/
+
+
+\end{thebibliography}
+\vspace{12pt}
+\end{document}

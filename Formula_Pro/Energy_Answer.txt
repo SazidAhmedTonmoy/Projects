@@ -1,0 +1,5 @@
+(*)
+The Voltage is 3.0 v
+The Current is 4.0 A
+The Time is 5.0 s
+The Energy is 60.0 J

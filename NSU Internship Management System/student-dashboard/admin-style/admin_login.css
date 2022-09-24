@@ -1,0 +1,100 @@
+
+/*============================Start-Login Page======================================*/
+.loginForm .btn-floating {
+	padding: 5px 8px !important;
+	margin: 0 !important;
+}
+.loginForm{
+	font-size: 10px;
+}
+.loginForm p {
+	font-size: 18px;
+	color: red;
+	font-weight: 700;
+}
+.loginForm {
+	padding: 40px 0;
+}
+.loginForm i {
+    font-size: 18px;
+}
+.latestForm .form-group {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top:  25px;
+
+}
+.latestForm .form-control-placeholder {
+    position: absolute;
+    top: 18px;
+    transition: .5s ease;
+    color: #7e7373;
+	left: 20px;
+	padding: 0 8px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.latestForm .form-control:focus+.form-control-placeholder,
+.latestForm .form-control:valid+.form-control-placeholder {
+    font-size: 10.62px !important;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+	background: #fff;
+	top: 8px;
+}
+.latestForm .form-control {
+    background: transparent;
+    border: 1px solid #7e7373;
+    transition: 0.5s;
+    height: calc(1.5em + .75rem + 20px);
+	padding: 8px 55px 8px 25px;
+    border-radius: 10px !important;
+	box-shadow: none !important;
+}
+.latestForm input.form-control:focus,
+.latestForm input.form-control:after {
+    outline-width: 0;
+    border: 1px solid #282b4a;
+    background: transparent;
+}
+.latestForm i.iconSet {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+	color: #7e7373;
+	width: 40px;
+	text-align: center;
+}
+.latestForm .form-control:focus i.iconSet {
+    color: #ff4153 !important;
+}
+.loginForm input[type="submit"] {
+    border-radius: 10px;
+    padding: 10px;
+	font-size: 18.62px;
+	margin-bottom: 50px;
+}
+.loginForm h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.loginForm label.custom-control-label {
+    padding-top: 3px;
+    color: #282b4a;
+}
+.loginForm .custom-checkbox .custom-control-label::before {
+	border-radius: 0;
+}
+.loginForm .custom-control-input:checked~.custom-control-label::before {
+	background: #282b4a;
+	border-color: #282b4a;
+}
+.loginForm a.forgotPwd {
+    color: #4b4b4b;
+}
+.loginForm .btn-floating  {
+    font-size: 14.96px;
+    padding: 10px 35px;
+}
+/*============================END-Login Page======================================*/

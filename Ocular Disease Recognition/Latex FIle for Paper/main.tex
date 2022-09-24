@@ -1,0 +1,251 @@
+\documentclass[12pt,a4paper,twoside,openright]{report}
+
+%%%%%%% Import packages %%%%%%%
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{epstopdf,amsfonts,array,multirow,amsmath,tabularx,setspace,amssymb,enumerate,csquotes}
+	
+% \usepackage{url}
+% \usepackage{bbm}
+% \usepackage{eufrak}
+% \usepackage{marvosym}
+% \usepackage{moderncvcompatibility}
+
+%% packages with settings
+% Inline listing package
+% \usepackage[inline]{enumitem}
+\usepackage{listings}
+% Page geometry
+\usepackage{geometry}
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\topmargin}{-1.27cm}
+\setlength{\headheight}{32pt}
+\setlength{\headsep}{1em} %% Setting for gap in header and main body%%
+\setlength{\textheight}{24.0cm}
+%\setlength{\textwidth}{14.65cm}
+\setlength{\footskip}{1.5cm}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{1em}
+
+% Set line spacing to 1.25 because
+% with 12pt font, 1.5 spacing is too large
+\setstretch{1.25}
+
+\usepackage{fancyhdr}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{relsize}
+\usepackage{bigints}
+
+% Packages for table of contents
+\setcounter{tocdepth}{3}
+
+\usepackage[nottoc]{tocbibind}
+\usepackage[titles,subfigure]{tocloft}
+
+\makeatletter
+\newlength{\@chapterlength} % Original Magic Value - RMR
+\setlength{\@chapterlength}{1.5em} % This code adds space for \@chapapp for toc entries
+\newcommand\@chapterheadsmark{1}
+\ifnum \@chapterheadsmark = 1
+\settowidth{\@chapterlength}{\@chapapp}
+\addtolength{\@chapterlength}{3.8em} % Space between toc labels and values
+\fi
+% \def\l@chapter{\pagebreak[3]\vskip 1em plus 1pt \@dottedtocline{0}{0em}{1.5em}}
+% \def\l@chapter{\pagebreak[3]\vskip 1em plus 1pt \@dottedtocline{0}{0em}{\@chapterlength}}
+
+\def\l@section{\@dottedtocline{1}{\@chapterlength}{2.3em}}
+
+\newlength{\@subsectionlength}
+\setlength{\@subsectionlength}{\@chapterlength}
+\addtolength{\@subsectionlength}{2.3em}
+\def\l@subsection{\@dottedtocline{2}{\@subsectionlength}{3.2em}}
+
+\newlength{\@subsubsectionlength}
+\setlength{\@subsubsectionlength}{\@chapterlength}
+\addtolength{\@subsubsectionlength}{5.5em}
+\def\l@subsubsection{\@dottedtocline{3}{\@subsubsectionlength}{4.1em}}
+
+\newlength{\@paragraphlength}
+\setlength{\@paragraphlength}{\@chapterlength}
+\addtolength{\@paragraphlength}{8.5em}
+\def\l@paragraph{\@dottedtocline{4}{\@paragraphlength}{5em}}
+
+\newlength{\@subparagraphlength}
+\setlength{\@subparagraphlength}{\@chapterlength}
+\addtolength{\@subparagraphlength}{10.5em}
+\def\l@subparagraph{\@dottedtocline{5}{\@subparagraph}{6em}}
+\makeatother
+
+\renewcommand\cftchappresnum{\chaptername~}
+\newlength\mylength
+\settowidth\mylength{\cftchappresnum\cftchapaftersnum\qquad}
+\addtolength\cftchapnumwidth{\mylength}
+
+\usepackage[acronym,nomain,toc]{glossaries}
+\makeglossaries
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{List of Symbols}
+\usepackage[toc,page]{appendix}
+
+% Packages for floats like figures and tables
+\usepackage{float}
+\usepackage{caption}
+% \usepackage[center]{caption}
+% \usepackage{longtable}
+% \usepackage{subfig}
+\usepackage{subfigure}
+% \usepackage{subcaption}
+% \usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
+% \usepackage{algorithmic}
+
+\usepackage[base]{babel}
+\usepackage{lipsum,blindtext} % just to generate text for the example
+
+\usepackage{color}   %May be necessary if you want to color links
+
+\usepackage{datetime}
+\newdateformat{thisdate}{%
+	\twodigit{\THEDAY}}
+\newdateformat{thismonthdigit}{%
+	\twodigit{\THEMONTH}}
+\newdateformat{thismonth}{%
+	\monthname[\THEMONTH]}
+\newdateformat{thisyear}{%
+	\THEYEAR}
+
+% \usepackage{cite}
+% \usepackage{notoccite}
+\usepackage[backend=biber, style=ieee, sorting=none, defernumbers=true]{biblatex}
+\addbibresource{bibliography.bib}
+
+% Hyperref should be the last package to be loaded
+\usepackage{hyperref}
+% \hypersetup{
+% 	breaklinks=true,
+%     colorlinks=true, %set true if you want colored links
+%     linktoc=all,     %set to all if you want both sections and subsections linked
+%     linkcolor=black,  %choose some color if you want links to stand out
+%     citecolor=black,
+%     urlcolor=black
+% }
+
+\hypersetup{linktoc=all, colorlinks=true, linkcolor=Black, citecolor=teal, urlcolor=red}
+
+
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator*{\argmin}{arg\;min}
+\DeclareMathOperator*{\argmax}{arg\;max}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{prop}{Proposition}
+%-------------------------------------------------------------------
+
+%\flushbottom
+%--------------------------------------------------------------------------
+\raggedbottom                               % (Remove Unnecessary space b/w paragraphs)
+%--------------------------------------------------------------------------
+\begin{document}
+
+% --------- Title and abstract etc in the front matter ----------- %
+\pagenumbering{gobble}
+\input{00_Cover/cover_page}
+
+%%%%%%%%%%%% Front Matter %%%%%%%%%%%%
+\pagenumbering{roman}
+\include{01_Declaration/Declaration}
+\include{02_Approval/Approval}
+ 
+%%%%%%%%%%%% Abstract %%%%%%%%%%%%
+\setstretch{2}  % double spacing
+\input{06_Abstract/Abstract}
+
+
+%%%%%% Table of Contents %%%%%%
+%%%%%%% To create 1.5 spacing in contents
+\setstretch{1.5}
+
+\input{09_Contents/Contents}
+
+\pagenumbering{arabic}
+%%%%%%%% To create double spacing in chapters
+\setstretch{2}
+
+% Fancy header
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection~#1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter~-~#1}{}}
+\fancyhf{}
+%\fancyhead[RE]{\leftmark}
+%\fancyhead[LO]{\rightmark}
+\fancyhead[LE,RO]{\thepage}
+
+%%%%%% Chapters %%%%%%
+%% Remove any command starting with "\lipsum"
+%% from the chapter text. They are used to generate
+%% junk test paragraphs
+
+\input{10_Chapter_1/Introduction}
+\newpage
+%\newpage\null\newpage
+\input{20_Chapter_2/Literature_review}
+\newpage
+%\newpage\null\newpage
+\input{30_Chapter_3/chapter_3}
+\newpage
+%\newpage\null\newpage
+\input{40_Chapter_4/chapter_4}
+\newpage
+%\newpage\null\newpage
+\input{50_Chapter_5/chapter_5}
+\newpage
+\input{70_Deployment/Deploymnet}
+\newpage
+%\newpage\null\newpage
+\input{60_Conclusion/Conclusion}
+\newpage
+
+%%%%%% Appendices %%%%%%
+\appendix
+\renewcommand{\chaptername}{Appendix}
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{\chaptername~}}
+\input{100_Appendices/appendix_0}
+\newpage
+% \null\newpage
+
+\setstretch{1}
+
+\vspace{12pt}
+\begin{thebibliography}{00}
+\bibitem{b1} Bourne, R. R., Stevens, G. A., White, R. A., Smith, J. L., Flaxman, S. R., Price, H., Jonas, J. B., Keeffe, J., Leasher, J., Naidoo, K., Pesudovs, K., Resnikoff, S., & Taylor, H. R. (2013). Causes of vision loss worldwide, 1990–2010: a systematic analysis. The Lancet Global Health, 1(6). https://doi.org/10.1016/s2214-109x(13)70113-x 
+\bibitem{b2} Sommer, A., Tielsch, J. M., Katz, J., Quigley, H. A., Gottsch, J. D., Javitt, J. C., Martone, J. F., Royall, R. M., Witt, K. A., & Ezrine, S. (1991). Racial Differences in the Cause-Specific Prevalence of Blindness in East Baltimore. New England Journal of Medicine, 325(20), 1412–1417. https://doi.org/10.1056/nejm199111143252004 
+\bibitem{b3} Congdon, N., O'Colmain, B., Klaver, C. C., Klein, R., Muñoz, B., Friedman, D. S., Kempen, J., Taylor, H. R., Mitchell, P., & Eye Diseases Prevalence Research Group (2004). Causes and prevalence of visual impairment among adults in the United States. Archives of ophthalmology (Chicago, Ill. : 1960), 122(4), 477–485. 
+\bibitem{b4} Application of Ocular Fundus Photography and Angiography. (2014). Ophthalmological Imaging and Applications, 154–175. https://doi.org/10.1201/b17026-12 
+\bibitem{b5} Rowe, S., MacLean, C. H., & Shekelle, P. G. (2004). Preventing Visual Loss From Chronic Eye Disease in Primary Care. JAMA, 291(12), 1487. https://doi.org/10.1001/jama.291.12.1487 
+\bibitem{b6} Kessel, L., Erngaard, D., Flesner, P., Andresen, J., Tendal, B., & Hjortdal, J. (2015). Cataract surgery and age‐related macular degeneration. An evidence‐based update. Acta Ophthalmologica, 93(7), 593–600. https://doi.org/10.1111/aos.12665Li, N., Li, T., Hu, C., Wang, K.
+\bibitem{b7} Li, N., Li, T., Hu, C., Wang, K., & Kang, H. (2021). A Benchmark of Ocular Disease Intelligent Recognition: One Shot for Multi-disease Detection. Benchmarking, Measuring, and Optimizing, 177–193. https://doi.org/10.1007/978-3-030-71058-3-11
+\bibitem{b8}K. N. Alam, M. S. Khan, A. R. Dhruba et al., “Deep learning-based sentiment analysis of COVID-19 vaccination responses from Twitter data,” Computational and Mathematical Methods in Medicine, vol. 2021, pp. 1–15, 2021.
+\bibitem{b9}J. He, C. Li, J. Ye, Y. Qiao, and L. Gu, “Self-speculation of clinical features based on knowledge distillation for accurate ocular disease classification,” Biomedical Signal Processing and Control, vol. 67, Article ID 102491, 2021.
+\bibitem{b10}K. N. Alam and M. M. Khan, “CNN based COVID-19 prediction from chest X-ray images,” in Proceedings of the 2021 IEEE 12th Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON), pp. 0486–0492, IEEE, New York, USA, 1 December 2021.
+\bibitem{b11}A. G. Roy, S. Conjeti, S. P. K. Karri et al., “ReLayNet: retinal layer and fluid segmentation of macular optical coherence tomography using fully convolutional networks,” Biomedical Optics Express, vol. 8, no. 8, pp. 3627–3642, 2017.
+\bibitem{b12}C. S. Lee, A. J. Tyring, N. P. Deruyter, Y. Wu, A. Rokem, and A. Y. Lee, “Deep-learning based, automated segmentation of macular edema in optical coherence tomography,” Biomedical Optics Express, vol. 8, no. 7, pp. 3440–3448, 2017.
+\bibitem{b13}S. P. K. Karri, D. Chakraborty, and J. Chatterjee, “Transfer learning based classification of optical coherence tomography images with diabetic macular edema and dry age-related macular degeneration,” Biomedical Optics Express, vol. 8, no. 2, pp. 579–592, 2017.
+\bibitem{b14}M. Oda, T. Yamaguchi, H. Fukuoka, Y. Ueno, and K. Mori, “Automated Eye Disease Classification Method from Anterior Eye Image Using Anatomical Structure Focused Image Classification Technique,” 2020, https://arxiv.org/abs/2005.01433.
+\bibitem{b15}F. Eperjesi, C. W. Fowler, and A. J. Kempster, “Luminance and chromatic contrast effects on reading and object recognition in low vision: a review of the literature,” Ophthalmic and Physiological Optics, vol. 15, no. 6, pp. 561–568, 1995.
+\bibitem{b16}N. M. Dipu, S. Alam Shohan, and K. M. A. Salam, “Ocular disease detection using advanced neural network based classification algorithms,” ASIAN JOURNAL OF CONVERGENCE IN TECHNOLOGY, vol. 7, no. 2, pp. 91–99, 2021.
+\bibitem{b17}M. S. Khan et al., “Deep learning for ocular disease recognition: An inner-class balance,” Comput. Intell. Neurosci., vol. 2022, p. 5007111, 2022.
+\bibitem{b18} L. Jain, H. V. S. Murthy, C. Patel and D. Bansal, "Retinal Eye Disease Detection Using Deep Learning," 2018 Fourteenth International Conference on Information Processing (ICINPRO), 2018, pp. 1-6, doi: 10.1109/ICINPRO43533.2018.9096838.
+\bibitem{b19} Nazir, T.; Irtaza, A.; Javed, A.; Malik, H.; Hussain, D.; Naqvi, R.A. Retinal Image Analysis for Diabetes-Based Eye Disease Detection Using Deep Learning. Appl. Sci. 2020, 10, 6185. https://doi.org/10.3390/app10186185
+\bibitem{b20}Sarki, R., Ahmed, K., Wang, H. et al. Automated detection of mild and multi-class diabetic eye diseases using deep learning. Health Inf Sci Syst 8, 32 (2020). https://doi.org/10.1007/s13755-020-00125-5
+\bibitem{b21} J. Shan and L. Li, "A Deep Learning Method for Microaneurysm Detection in Fundus Images," 2016 IEEE First International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE), 2016, pp. 357-358, doi: 10.1109/CHASE.2016.12.
+\bibitem{b22} Malik, S.; Kanwal, N.; Asghar, M.N.; Sadiq, M.A.A.; Karamat, I.; Fleury, M. Data Driven Approach for Eye Disease Classification with Machine Learning. Appl. Sci. 2019, 9, 2789. https://doi.org/10.3390/app9142789
+\bibitem{b23} “Ocular disease recognition,” https://www.kaggle.com/andrewmvd/ocular-disease-recognition-odir5k.
+\end{thebibliography}
+\vspace{12pt}
+\end{document}

@@ -1,0 +1,4 @@
+(*)
+The Voltage is 4.0 v
+The Resistance is 2.0 ohm
+The Power is 8.0 watt

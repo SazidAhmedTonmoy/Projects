@@ -1,0 +1,20 @@
+\chapter{DATASET}
+The dataset [23] utilized in this investigation is called ODIR (Ocular Disease Intelligent Recognition). One of the most extensive public resources on Kaggle for identifying eye illnesses is this dataset. Eight classifications of ocular diseases are used to group the fundus photos in this collection. They are normal (N), myopia (M), hypertension (H), diabetes (D), cataract (C), glaucoma (G), age-related macular degeneration (A), and other abnormalities/diseases (O). The 5000 color fundus images in this dataset are split into training and testing groups. All of the photographs for this project were scaled to 224 224. The full ODIR dataset was not used for this research. Normal, cataract, glaucoma, myopia, and hypertension related images are being used. To remove imbalance, normal images are taken according to the disease’s image number to train the model. For VGG19 and Resnet50, The dataset was splitted into 90\% and 10\% ratio for training and testing. For MobilenetV2, the dataset was split into 70\%, 20\%, and 10\% ratios for training, validation, and testing. For Mobilenetv2, the accuracy was too low. That is why the dataset was augmented for better results. The number of images for each catagory is given below: 
+
+\begin{table}[h]
+\centering
+\caption{Dataset Size}
+\begin{tabular}{|l|l|l|} 
+\hline
+Class Name   & Number of Images & Augmented  \\ 
+\hline
+Normal       & 2100             & 2100       \\
+Cataract     & 401              & 1899       \\
+Glaucoma     & 396              & 1896       \\
+Myopia       & 205              & 1805       \\
+Hypertensive & 202              & 1702       \\
+\hline
+\end{tabular}
+\end{table}
+
+

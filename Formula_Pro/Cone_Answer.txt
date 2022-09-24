@@ -1,0 +1,5 @@
+(*)
+The Lenght is 1.0 unit
+The Width is 2.0 unit
+The Height is 3.0 unit
+The Volume of the Cuboid is 6.0 unit^3

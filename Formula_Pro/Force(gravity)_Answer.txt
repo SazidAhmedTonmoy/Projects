@@ -1,0 +1,5 @@
+(*)
+The 1st Mass is 50000.0 kg
+The 2nd Mass is 70000.0 kg
+The Distance is 500.0 m
+The Force is 0.23358999999999996 N

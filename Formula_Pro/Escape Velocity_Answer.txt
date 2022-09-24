@@ -1,0 +1,4 @@
+(*)
+The Mass of a Planet is 6.0E24 kg
+The Radius of a Planet is 6400000.0 m
+The Escape Velocity is 11186.48738434009 m/s

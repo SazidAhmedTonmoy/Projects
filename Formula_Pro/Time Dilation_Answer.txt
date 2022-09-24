@@ -1,0 +1,4 @@
+(*)
+The Time on Earth is 1000.0 s
+The Velocity is 2000000.0 m/s
+The Time Dilation is 1000.0222229629904 s

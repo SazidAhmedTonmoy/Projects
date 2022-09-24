@@ -1,0 +1,4 @@
+(*)
+The height is 5.0 unit
+The base is 6.0 unit
+The Area of the triangle is 15.0 unit^2

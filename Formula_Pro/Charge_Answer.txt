@@ -1,0 +1,4 @@
+(*)
+The Current is 5.0 A
+The Time is 6.0 s
+The Charge is 30.0 C

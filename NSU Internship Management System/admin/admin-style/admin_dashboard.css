@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'palatino';
+    font-weight: bold;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.main-content{
+    background-color: #f1f2f6;  
+    min-height: 628px;
+}
+.col-4{
+    width: 30%;
+    background-color: white;
+    margin: 10px;
+    padding: 30px;
+    float: left;
+    text-align: center;
+}
+
+/*Registered Studenr Part */
+.tbl-full{
+    width: 100%;
+}
+table tr th{
+    border-bottom: 2px solid black;
+    padding: 1%;
+    font-size: 17px;
+}
+table tr td{  
+    padding: 10px;
+    font-size: 15px;
+    border:1px solid lightsalmon;   
+}
+.position {
+    text-align: center;
+}
+/*.btn2{
+    background-color:turquoise;
+    padding: 2%;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.btn2:hover {
+    color: #000000;
+}
+*/
+.position .btn3{
+    background-color: #ff6b81;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top:  5px;
+    padding-bottom: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.btn3:hover {
+    color: #000000;
+}
+
+.change_table table td {
+    border: none;
+}
+
+/*Registered Studenr Part */
+
+/* Footer Design*/
+.footer_design{
+    background-color: lightseagreen;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: -16px;
+}
+/* Footer Design*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

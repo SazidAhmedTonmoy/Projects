@@ -1,0 +1,79 @@
+body{
+	margin:0px;
+	padding: 0px;
+ /* background-color: lightsalmon;*/
+}
+.clearfix{
+	clear: both;
+}
+.logo{
+  margin-left: -10px;
+}
+.sidenav {
+  min-height: 753px;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#80FFDB, #5390D9);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 5px;
+}
+.sidenav a {
+  padding: 15px 8px 15px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #000000;
+}
+#main {
+  transition: .5s;
+  padding: 16px;
+  margin-left: 214px;
+  min-height: 753px;
+}
+.head{
+	padding:5px;
+}
+.col-div-6{
+	width: 50%;
+	float: left;
+  margin-top: -15px;
+}
+.col-div-6 .row {
+  float: right;
+}
+.icon a{
+   color: #8E0E00;
+   float: right;
+   overflow: hidden;
+   margin-left: 60px;
+}
+.icon a i {
+  font-size: 30px;
+  margin-top: 25px;
+}
+.design a{
+  color: #000000;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'sans-erif';
+  text-decoration: none;
+  margin-top: 25px;
+  margin-right: 50px;
+  background-color: #ffffff;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 3px;
+}
+.nav2{
+  display: none;
+}
+
